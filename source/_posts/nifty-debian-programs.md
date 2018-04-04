@@ -8,7 +8,39 @@ tags:
 
 ##### Contents
 
-* [Midnight Commander](#midnight-commander)
+* [Docker](docker) / [Uninstall](uninstall-docker)
+* [Midnight Commander - terminal file manager](#midnight-commander)
+
+
+### Docker
+```bash
+    # Dependencies
+    apt install apt-transport-https ca-certificates curl gnupg-agentsoftware-properties-common;
+
+    # GPG Key
+    echo "Docker GPG Key: 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88";
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - &&
+    apt-key fingerprint 0EBFCD88;
+
+    # Add repository
+    echo "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list;
+
+    # Install
+    apt update;
+    apt install docker-ce docker-ce-cli;
+
+    # Verify
+    docker run --name hello-world-container hello-world;
+    docker rm hello-world-container
+```
+
+#### Uninstall Docker
+```bash
+    apt purge docker-ce docker-ce-cli containerd.io &&
+    apt autoremove &&
+    rm -rf /var/lib/docker;
+    rm -rf /etc/docker
+```
 
 
 ### Midnight commander
