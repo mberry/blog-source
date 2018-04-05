@@ -8,8 +8,8 @@ tags:
 
 ##### Contents
 
-* [Youtube-dl](youtube-dl)
-* [Docker](docker) / [Uninstall](uninstall-docker)
+* [Youtube-dl](#youtube-dl)
+* [Docker](#docker) / [Uninstall](#uninstall-docker)
 * [Midnight Commander - terminal file manager](#midnight-commander)
 
 ### Youtube-dl
