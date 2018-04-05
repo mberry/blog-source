@@ -11,6 +11,7 @@ tags:
 * [Youtube-dl](#youtube-dl)
 * [Docker](#docker) / [Uninstall](#uninstall-docker)
 * [Midnight Commander - terminal file manager](#midnight-commander)
+* [Remove Apache](#remove-apache)
 
 ### Youtube-dl
 
@@ -61,4 +62,12 @@ tags:
     echo "deb https://www.tataranovich.com/debian stretch main" >> /etc/apt/source.list;
     echo "deb-src https://www.tataranovich.com/debian stretch main" >> /etc/apt/source.list;
     apt install mc
+```
+
+### Remove Aapche
+```bash
+sudo -i;
+service apache2 stop &&
+apt-get purge apache2 apache2-utils apache2.2-bin apache2-common &&
+whereis apache2
 ```
