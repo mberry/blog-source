@@ -8,8 +8,20 @@ tags:
 
 ##### Contents
 
+* [Youtube-dl](youtube-dl)
 * [Docker](docker) / [Uninstall](uninstall-docker)
 * [Midnight Commander - terminal file manager](#midnight-commander)
+
+### Youtube-dl
+
+```bash
+    sudo -i;
+    wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &&
+    chmod a+rx /usr/local/bin/youtube-dl
+    # To extract audio
+    # apt install ffmpeg
+    # youtube-dl -x <url for audio extraction>
+```
 
 
 ### Docker
