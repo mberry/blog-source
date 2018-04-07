@@ -14,6 +14,7 @@ tags:
 * [Midnight Commander - terminal file manager](#midnight-commander)
 * [Remove Apache](#remove-apache)
 * [Redshift](#redshift)
+* [Cmus](#cmus)
 
 ### Youtube-dl
 
@@ -81,3 +82,21 @@ tags:
     # run on startup
     # @reboot redshift
 ```
+
+### Cmus
+
+```bash
+    sudo apt install cmus
+```
+
+Usage:  
+H/L = Scan forward backwards
+J/K or Up/Down buttons = Up/Down
+:add ~/Music = add folder to tree
+-/=     Volume up/down 10%
+s = toggle shuffle
+x = play
+v = stop
+z = previous track
+c  = pause
+b = next
