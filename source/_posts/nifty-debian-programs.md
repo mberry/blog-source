@@ -8,10 +8,12 @@ tags:
 
 ##### Contents
 
+
 * [Youtube-dl](#youtube-dl)
 * [Docker](#docker) / [Uninstall](#uninstall-docker)
 * [Midnight Commander - terminal file manager](#midnight-commander)
 * [Remove Apache](#remove-apache)
+* [Redshift](#redshift)
 
 ### Youtube-dl
 
@@ -66,8 +68,16 @@ tags:
 
 ### Remove Aapche
 ```bash
-sudo -i;
-service apache2 stop &&
-apt-get purge apache2 apache2-utils apache2.2-bin apache2-common &&
-whereis apache2
+    sudo -i;
+    service apache2 stop &&
+    apt-get purge apache2 apache2-utils apache2.2-bin apache2-common &&
+    whereis apache2
+```
+
+### Redshift
+```bash
+    apt install redshift;
+    sudo crontab -e 
+    # run on startup
+    # @reboot redshift
 ```
