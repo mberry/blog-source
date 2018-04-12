@@ -6,17 +6,17 @@ tags:  rust, vscode, debugging
 
 VSCode should detect rust and offer to create a launch.json template. From there it needs a few tweaks. 
 
-For a binary the launch.json configuration file simply needs to be pointed towards the build folder which should be target/debug/<your binary>. Example
+For a binary the launch.json configuration file simply needs to be pointed towards the build folder which should be target/debug/<your binary>. Example:
 ```json
     "program": "${workspaceFolder}/target/debug/my_binary"
 ```
-For debugging libraries or binary tests/benchmarks it's a bit more complicated, first requiring a temporary test build, so run ```cargo test``` initially. This will build into the same debug folder but the filename will have a hash appended indicating it's a for running tests. You'll need to copy that filename into launch.json.  Example: 
+For debugging libraries or binary tests/benchmarks it's a bit more complicated, first requiring a temporary test build, so run `cargo test` initially. This will build into the same debug folder but the filename will have a hash appended indicating it's a for running tests. You'll need to copy that filename into launch.json.  Example: 
 ```json
     "program": "${workspaceFolder}/target/debug/my_binary-9734ad86acd71825"
 ```
 Upon cleaning and recompiling this hash can change requiring the path to be updated periodically. 
 
-Finally it needs a new parameter - cargo. I''ve included extra arguments, ```-- --nocapture``` prints stdout to the console. You'll notice running the tests internally in vscode by clicking run tests has this option selected by default
+Finally it needs a new parameter - cargo. Also included are extra arguments, `-- --nocapture` which prints stdout to the console, sometimes useful. You'll notice running the tests internally in vscode by clicking run tests has this option selected by default
 ```json 
     "cargo": {
         "args": ["test", "--" , "--nocapture"]
@@ -29,7 +29,7 @@ To debug benchmarks the arguments simply need to be changed:
         }
 ```
 
-Multiple configurations can be listed and then selected as needed. 
+Multiple test configurations can be listed and then selected via VSCode's command menu. 
 
 A full example of a typical launch.json setup: 
 ```json
