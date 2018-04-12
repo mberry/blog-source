@@ -4,10 +4,7 @@ date: 2018-04-02 12:02:27
 tags: 
 ---
 
-# Nifty Debian Programs
-
-##### Contents
-
+#### Contents
 
 * [Youtube-dl](#youtube-dl)
 * [Docker](#docker) / [Uninstall](#uninstall-docker)
