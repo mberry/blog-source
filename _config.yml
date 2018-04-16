@@ -6,7 +6,7 @@
 title: Hexo
 subtitle:
 description:
-keywords: Linux
+keywords: software, programming, open-source, linux
 author: Mitchell Berry
 language: en
 timezone: Australia/Sydney
@@ -40,7 +40,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace:
   
