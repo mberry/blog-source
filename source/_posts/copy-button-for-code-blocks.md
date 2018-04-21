@@ -81,10 +81,11 @@ Bop it! Twist it! Style it:
     }
 ```
 
-Clipboard image example:
+To use a clipboard icon instead:
 
 ```js
 var clippy = '<img src="images/clippy.svg" width=13></img>';
 ```
-#### Source
-![Clippy](/images/clippy.svg)
+##### Example SVG Icon (MIT license)
+<img src="/images/clippy.svg" alt="clipboard icon"
+	title="Clippy" width="50" height="50" align="left"/>
