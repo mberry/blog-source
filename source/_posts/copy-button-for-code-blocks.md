@@ -8,39 +8,37 @@ There's a few frameworks out there like clipboard.js and code-box-copy but after
 
 To use a clipboard image or for different text modify the clippy element. Note that jQuery doesn't *officially* support SVG images but had no problem embedding one here. The copied text box reverts after 5 seconds using a promise to sleep.
 
-As an after-footer script or at least after loading jQuery:
+As an after-footer script (or anywhere after loading jQuery):
 
-```html
-<script>
-    var clippy = "Copy";
-    $('.highlight').prepend($('<button>').addClass('copy-btn')
-        .append(clippy).on('click', function(e) {
-        console.log(e);
-        var code = $(e.target).parent().find('.code').find('.line').map(function(i, e){
-        return $(e).text()
-      }).toArray().join('\n')
-      e.currentTarget.textContent = 'Copied!';
-      revertButton(e, 5000);
-      var ta = document.createElement('textarea')
-      document.body.appendChild(ta)
-      ta.style.position = 'fixed'
-      ta.style.top = 0
-      ta.style.left = 0
-      ta.value = code
-      ta.select()
-      ta.focus()
-      document.execCommand('copy')
-      document.body.removeChild(ta)
+```js
+var clippy = "Copy";
+$('.highlight').prepend($('<button>').addClass('copy-btn')
+    .append(clippy).on('click', function(e) {
+    console.log(e);
+    var code = $(e.target).parent().find('.code').find('.line').map(function(i, e){
+    return $(e).text()
+    }).toArray().join('\n')
+    e.currentTarget.textContent = 'Copied!';
+    revertButton(e, 5000);
+    var ta = document.createElement('textarea')
+    document.body.appendChild(ta)
+    ta.style.position = 'fixed'
+    ta.style.top = 0
+    ta.style.left = 0
+    ta.value = code
+    ta.select()
+    ta.focus()
+    document.execCommand('copy')
+    document.body.removeChild(ta)
 
-    }))
-    function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-    }
-    async function revertButton(e, time){
-        await sleep(time);
-        e.currentTarget.textContent = 'Copy';
-    }
-</script>
+}))
+function sleep(ms) {
+return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function revertButton(e, time){
+    await sleep(time);
+    e.currentTarget.textContent = 'Copy';
+}
 ```
 
 Style it:
