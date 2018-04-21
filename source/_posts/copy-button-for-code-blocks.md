@@ -84,6 +84,7 @@ Bop it! Twist it! Style it:
 Clipboard image example:
 
 ```js
-var clippy = '<img src="../img/clippy.svg" width=13></img>';
+var clippy = '<img src="images/clippy.svg" width=13></img>';
 ```
-
+#### Source
+![Clippy](/images/clippy.svg)
