@@ -41,7 +41,7 @@ async function revertButton(e, time){
 }
 ```
 
-Style it:
+Twist it! Bump it! Style it:
 
 ```css
     .copy-btn {
