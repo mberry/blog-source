@@ -9,6 +9,7 @@ A random collection of (possibly) useful shell commands.
 ##### Contents
 
 * [Copy only certain filetypes](#copy-filetype)
+* [List open ports](#list-ports)
 
 <a name="copy-filetype">
 ##### Find and copy only certain file type
@@ -24,3 +25,15 @@ A random collection of (possibly) useful shell commands.
 * /home/sk/test2/ – Target directory to save the matching files.
 
 * \; – Indicates it that the commands to be executed are now complete, and to carry out the command again on the next match.
+
+<a name="list-ports">
+##### List all open ports
+```bash
+netstat -lntup
+```
+* -l only services which are listening on some port
+* -n show port number, don't try to resolve the service name
+* -t tcp ports
+* -u udp ports
+* -p name of the program
+
