@@ -83,6 +83,16 @@ ip6tables -F &&
 ip6tables -X
 ```
 
+<br>
+<a name="deny ipv6">
+### Drop all ipv6 connections
+```bash
+ip6tables -P INPUT DROP &&
+ip6tables -P FORWARD DROP &&
+ip6tables -P OUTPUT DROP 
+```
+
+
 <br> 
 <a name="download-unzip">
 ##### Download and unzip file one liner
