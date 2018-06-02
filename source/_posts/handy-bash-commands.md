@@ -15,6 +15,7 @@ A random collection of (possibly) useful shell commands.
 * [Wipe all iptables rules](#flush-iptable)
 * [Drop all ipv6 connections](#deny-ipv6)
 * [Webserver iptables setup](#webserver-iptables)
+* [Disable system logging](#no-logs)
 
 
 <br>
@@ -132,6 +133,14 @@ iptables -P INPUT DROP &&
 iptables-save > ~/ruleset-v4 &&
 ip6tables-save > ~/ruleset-v6 &&
 echo "### iptables setup complete ###"
+```
+
+<br>
+<a name="no-logs">
+##### Disable system logging
+```bash
+service rsyslog stop
+systemctl disable rsyslog
 ```
 
 <br> 
