@@ -11,6 +11,11 @@ A random collection of (possibly) useful shell commands.
 * [Copy only certain filetypes](#copy-filetype)
 * [List all open ports](#list-ports)
 * [Replace words in text files](#word-replace)
+* [Get user info](#user-info)
+* [Wipe all iptables rules](#flush-iptable)
+* [Drop all ipv6 connections](#deny-ipv6)
+* [Webserver iptables setup](#webserver-iptables)
+
 
 <br>
 <a name="copy-filetype">
@@ -95,6 +100,7 @@ ip6tables -P OUTPUT DROP
 <br>
 <a name="webserver-iptables">
 ##### Webserver iptables setup (Uses a custom ssh port)
+
 ```bash
 # The loopback interface, also referred to as lo, is what a computer uses to forward network connections to itself.
 # also used if you configure your application server to connect to a database server with a "localhost" address
