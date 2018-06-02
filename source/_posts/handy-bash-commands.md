@@ -49,6 +49,14 @@ sed -i '/TEXT/c\NEWTEXT' /tmp/foo
 # Change word on particular line
 sed -i '27s/TEXT/NEWTEXT/' /tmp/foo
 ```
+<br>
+<a name="diff-user">
+##### Run command as different user
+```bash
+# Requires root
+runuser -l mitchell -c "whoami"
+```
+
 
 <br> 
 <a name="download-unzip">
@@ -56,4 +64,4 @@ sed -i '27s/TEXT/NEWTEXT/' /tmp/foo
 ```bash
 echo "Please enter url";
 url = input()
-
+```
