@@ -10,6 +10,7 @@ A random collection of (possibly) useful shell commands.
 
 * [Copy only certain filetypes](#copy-filetype)
 * [List all open ports](#list-ports)
+* [Replace words in text files](#word-replace)
 
 <br>
 <a name="copy-filetype">
@@ -39,5 +40,20 @@ netstat -lntup
 * -u udp ports
 * -p name of the program
 
+<br>
+<a name="word-replace">
+##### Replace words in text files (Sed)
+```bash
+# Search for all words TEXT in file /tmp/foo and change line in place to NEWTEXT
+sed -i '/TEXT/c\NEWTEXT' /tmp/foo
+# Change word on particular line
+sed -i '27s/TEXT/NEWTEXT/' /tmp/foo
+```
 
+<br> 
+<a name="download-unzip">
+##### Download and unzip file one liner
+```bash
+echo "Please enter url";
+url = input()
 
