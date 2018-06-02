@@ -57,6 +57,13 @@ sed -i '27s/TEXT/NEWTEXT/' /tmp/foo
 runuser -l mitchell -c "whoami"
 ```
 
+<br>
+<a name="user=info">
+### Get user info (groups/uid/gid) 
+```bash
+id janitor
+```
+
 
 <br> 
 <a name="download-unzip">
