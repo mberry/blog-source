@@ -23,7 +23,7 @@ A random collection of (possibly) useful shell commands.
 
 * {} – is automatically replaced with the file name of the files found by ‘find’ command.
 
-* /home/sk/test2/ – Target directory to save the matching files.
+* /home/mb/music/ – Target directory to save the matching files.
 
 * \; – Indicates it that the commands to be executed are now complete, and to carry out the command again on the next match.
 
