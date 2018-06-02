@@ -84,14 +84,49 @@ ip6tables -X
 ```
 
 <br>
-<a name="deny ipv6">
-### Drop all ipv6 connections
+<a name="deny-ipv6">
+##### Drop all ipv6 connections
 ```bash
 ip6tables -P INPUT DROP &&
 ip6tables -P FORWARD DROP &&
 ip6tables -P OUTPUT DROP 
 ```
 
+<br>
+<a name="webserver-iptables">
+##### Webserver iptables setup (Uses a custom ssh port)
+```bash
+# The loopback interface, also referred to as lo, is what a computer uses to forward network connections to itself.
+# also used if you configure your application server to connect to a database server with a "localhost" address
+iptables -A INPUT -i lo -j ACCEPT &&
+iptables -A OUTPUT -o lo -j ACCEPT &&
+
+# create a firewall rule that allows established and related incoming traffic, so that the server will allow return traffic to outgoing connections initiated by the server itself
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT &&
+
+# allow outgoing traffic of all established connections, which are typically the response to legitimate incoming connections
+iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT &&
+
+# Some network traffic packets get marked as invalid. Sometimes it can be useful to log this type of packet but often it is fine to drop them. 
+iptables -A INPUT -m conntrack --ctstate INVALID -j DROP &&
+
+# SSH Custom port
+iptables -A INPUT -p tcp --dport 2444 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT &&
+# only necessary if the OUTPUT policy is not set to ACCEPT
+iptables -A OUTPUT -p tcp --sport 2444 -m conntrack --ctstate ESTABLISHED -j ACCEPT &&
+
+# allow both HTTP and HTTPS traffic
+iptables -A INPUT -p tcp -m multiport --dports 80,443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT &&
+iptables -A OUTPUT -p tcp -m multiport --sports 80,443 -m conntrack --ctstate ESTABLISHED -j ACCEPT &&
+
+# drop the rest, ignoring forwarding
+iptables -P INPUT DROP &&
+
+# basic file for backup
+iptables-save > ~/ruleset-v4 &&
+ip6tables-save > ~/ruleset-v6 &&
+echo "### iptables setup complete ###"
+```
 
 <br> 
 <a name="download-unzip">
