@@ -9,8 +9,9 @@ A random collection of (possibly) useful shell commands.
 ##### Contents
 
 * [Copy only certain filetypes](#copy-filetype)
-* [List open ports](#list-ports)
+* [List all open ports](#list-ports)
 
+<br>
 <a name="copy-filetype">
 ##### Find and copy only certain file type
 ```bash
@@ -26,6 +27,7 @@ A random collection of (possibly) useful shell commands.
 
 * \; – Indicates it that the commands to be executed are now complete, and to carry out the command again on the next match.
 
+<br>
 <a name="list-ports">
 ##### List all open ports
 ```bash
@@ -36,4 +38,6 @@ netstat -lntup
 * -t tcp ports
 * -u udp ports
 * -p name of the program
+
+
 
