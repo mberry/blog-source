@@ -13,8 +13,8 @@ tags:
 * [Redshift](#redshift)
 * [Cmus](#cmus)
 
+<a name="youtube-dl">
 ### Youtube-dl
-
 ```bash
     sudo -i;
     wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &&
@@ -24,7 +24,7 @@ tags:
     # youtube-dl -x <url for audio extraction>
 ```
 
-
+<a name="docker">
 ### Docker
 ```bash
     # Dependencies
@@ -46,7 +46,7 @@ tags:
     docker run --name hello-world-container hello-world;
     docker rm hello-world-container
 ```
-
+<a name="uninstall-docker">
 #### Uninstall Docker
 ```bash
     apt purge docker-ce docker-ce-cli containerd.io &&
@@ -55,7 +55,7 @@ tags:
     rm -rf /etc/docker
 ```
 
-
+<a name="midnight-commander">
 ### Midnight commander
 ```bash
     apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 0x836CC41976FB442E &&
@@ -63,7 +63,7 @@ tags:
     echo "deb-src https://www.tataranovich.com/debian stretch main" >> /etc/apt/source.list;
     apt install mc
 ```
-
+<a name="remove-apache">
 ### Remove Aapche
 ```bash
     sudo -i;
@@ -71,7 +71,7 @@ tags:
     apt-get purge apache2 apache2-utils apache2.2-bin apache2-common &&
     whereis apache2
 ```
-
+<a name="redshift">
 ### Redshift
 ```bash
     apt install redshift;
@@ -79,9 +79,8 @@ tags:
     # run on startup
     # @reboot redshift
 ```
-
+<a name="cmus">
 ### Cmus
-
 ```bash
     sudo apt install cmus
 ```
