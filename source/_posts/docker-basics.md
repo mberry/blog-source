@@ -6,6 +6,8 @@ tags: docker, virtualisation
 
 **A rough outline of Docker basics** 
 
+<!--more-->
+
 ### Pulling in Images
 
 ```bash
