@@ -1,10 +1,12 @@
 ---
 title: Factomd node install
 date: 2018-06-05 07:52:40
-tags: Factom, Ubuntu
+tags: Factom, Debian
 ---
 
 Factomd installation script, requires Go, git and Glide. Golang installation instructions [here](golang-debian-ubuntu-installation\index.html)
+
+<!--more-->
 
 ```bash
 #!/bin/bash
