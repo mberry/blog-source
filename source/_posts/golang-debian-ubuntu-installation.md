@@ -6,6 +6,8 @@ tags: Go, Debian, Ubuntu
 
 Quick bash script to install a specific Go version. 
 
+<!--more-->
+
 ```bash
 #!/bin/bash
 read -p "Enter Go version (e.g 1.7): " version
