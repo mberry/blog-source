@@ -10,6 +10,8 @@ For a binary the launch.json configuration file simply needs to be pointed towar
 ```json
     "program": "${workspaceFolder}/target/debug/my_binary"
 ```
+<!--more-->
+
 For debugging libraries or binary tests/benchmarks it's a bit more complicated, first requiring a temporary test build, so run `cargo test` initially. This will build into the same debug folder but the filename will have a hash appended indicating it's a for running tests. You'll need to copy that filename into launch.json.  Example: 
 ```json
     "program": "${workspaceFolder}/target/debug/my_binary-9734ad86acd71825"
