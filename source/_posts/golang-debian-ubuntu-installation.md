@@ -17,8 +17,11 @@ export PATH=$PATH:/usr/local/go/bin
 mkdir ~/go
 echo "Version:"
 go version
-echo "GOPATH:"
-go env GOPATH
+echo "export GOPATH=~/go" >> ~/.profile
+export GOPATH=~/go
+echo "GOPATH: $GOPATH"
+echo "export PATH=$PATH:~/go/bin" >> ~/.profile
+export PATH=$PATH:~/go/bin
 ```
 
 
