@@ -17,6 +17,7 @@ A random collection of (possibly) useful shell commands.
 * [Webserver iptables setup](#webserver-iptables)
 * [Disable system logging](#no-logs)
 
+<!--more-->
 
 <br>
 <a name="copy-filetype">
