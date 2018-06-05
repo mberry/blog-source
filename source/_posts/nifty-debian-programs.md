@@ -13,6 +13,8 @@ tags:
 * [Redshift](#redshift)
 * [Cmus](#cmus)
 
+<!--more-->
+
 <a name="youtube-dl">
 ### Youtube-dl
 ```bash
