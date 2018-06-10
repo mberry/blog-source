@@ -4,7 +4,7 @@ date: 2018-06-10 09:22:46
 tags: C, Rust, Development
 ---
 
-Transpiling can sometimes yield good results and at least provides a scaffold to build upon. C2Rust was built upon Corrode and is so far the most advanced transpiler.
+Transpiling can sometimes yield good results and at least provides a scaffold to build upon. C2Rust was built upon Corrode and is currently the best around.
 
 <!--more-->
 
