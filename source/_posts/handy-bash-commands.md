@@ -16,6 +16,8 @@ A random collection of (possibly) useful shell commands.
 * [Drop all ipv6 connections](#deny-ipv6)
 * [Webserver iptables setup](#webserver-iptables)
 * [Disable system logging](#no-logs)
+* [Modify sudo timeout](#sudo-time)
+* [Change hostname](#host-name)
 
 <!--more-->
 
@@ -150,4 +152,26 @@ systemctl disable rsyslog
 ```bash
 echo "Please enter url";
 url = input()
+```
+
+<br> 
+<a name="sudo-time">
+Time is in minutes. Use "-1" for infinite or "0" for never.
+DO NOT modify the file any other way besides using visudo.
+```bash
+sudo visudo
+# append to file
+Defaults:USER timestamp_timeout=30
+```
+
+<br> 
+<a name="host-name">
+```bash
+sudo hostname <new-server-name-here>
+
+# edit the /etc/hostname file and update hostname:
+sudo nano /etc/hostname
+
+# edit the /etc/hosts file and update the lines that reads your old-host-name:
+sudo nano /etc/hosts
 ```
