@@ -12,14 +12,13 @@ In yet another brilliant move by a kpi fuelled  management departments the Apach
 
 <!--more-->
 
-The [github issue](https://docs.docker.com/docker-for-mac/release-notes/) has a few gems including the corporate response which gathered a few thousand thumb downs:
+The [github issue](https://github.com/docker/docker.github.io/issues/6910) has a few gems including the corporate response which gathered a few thousand thumb downs:
 
 > I know that this can feel like a nuisance, but we've made this change to make sure we can improve the Docker for Mac and Windows experience for users moving forward.
 
 > Do you want to be Oracle? Because this is how you become Oracle.
 
-
-If they continue down this path hopefully LXC rises again from the ashes.
+If only LXC was more appreciated.
 
 The direct links are hidden from the site but still work.
 
