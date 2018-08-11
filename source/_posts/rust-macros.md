@@ -4,7 +4,7 @@ date: 2018-07-08 13:01:11
 tags: rust, development
 ---
 
-Rust macros are are powerful tools able to go beyond the capabilites of normal functions, this comes at the expense of debugging ease and readability.
+Rust macros are powerful tools able to go beyond the capabilites of normal functions, this comes at the expense of debugging ease and readability.
 
 <!--more-->
 
