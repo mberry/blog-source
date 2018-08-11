@@ -1,26 +1,33 @@
 ---
 title: Nifty Debian Programs
 date: 2018-04-02 12:02:27
-tags: 
+tags: Debian, Software
 ---
 
 #### Contents
 
+* [Urxvt](#urxvt)
 * [Youtube-dl](#youtube-dl)
 * [Docker](#docker) / [Uninstall](#uninstall-docker)
 * [Midnight Commander - terminal file manager](#midnight-commander)
 * [Remove Apache](#remove-apache)
 * [Redshift](#redshift)
 * [Cmus](#cmus)
+* [Zsh](#zsh)
 
 <!--more-->
+
+<a name="urxvt">
+### Urxvt
+```bash
+apt install rxvt-unicode
+```
 
 <a name="youtube-dl">
 ### Youtube-dl
 ```bash
-    sudo -i;
-    wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &&
-    chmod a+rx /usr/local/bin/youtube-dl
+    sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl &&
+    sudo chmod a+rx /usr/local/bin/youtube-dl
     # To extract audio
     # apt install ffmpeg
     # youtube-dl -x <url for audio extraction>
@@ -98,3 +105,42 @@ v = stop
 z = previous track
 c  = pause
 b = next
+
+<a name="zsh">
+### Zsh
+##### Installation
+```bash
+apt install zsh -y &&
+chsh -s $(which zsh)
+```
+
+##### Oh-my-zsh
+Piping directly into shell, pure evil.
+```bash
+apt install wget git -y;
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh;
+cd ~/.oh-my-zsh/themes/;
+ls -a
+```
+Change Theme Function:
+```bash
+# Change theme, no argument prints all themes
+function zshtheme (){
+        if [ $# -eq 0 ]
+        then
+            # column command requires bsdmainutils
+            ls /root/.oh-my-zsh/themes/ | sed 's/.zsh-theme/ /' | column
+        else
+            sed -i "0,/ZSH_THEME=.*/s/ZSH_THEME=.*/ZSH_THEME=$1/" ~/.zshrc
+        exec zsh
+        fi
+}
+```
+
+
+##### Same config root and user
+```bash
+ln -s $HOME/.oh-my-zsh           /root/.oh-my-zsh;
+ln -s $HOME/.zshrc               /root/.zshrc;
+```
+
