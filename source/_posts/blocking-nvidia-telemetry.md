@@ -1,12 +1,15 @@
 ---
 title: Blocking Nvidia Telemetry
-tags: 'Nvidia, Telemetry, Privacy, "Corporate Nonsense"'
+tags: 
+- Nvidia 
+- Telemetry 
+- Privacy 
+- Corporate Nonsense
 category: Privacy
 date: 2019-05-03 09:26:25
 ---
 
-
-Null-routing all the garbage packets a gpu shouldn't be sending out. Using their GEForce GUI also requires a sign-up now, sigh.
+Null-routing all the garbage packets you shouldn't be sending out to own a GPU. Their GEForce config GUI also requires a sign-up, sigh.
 
 <!--more-->
 
