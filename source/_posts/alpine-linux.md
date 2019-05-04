@@ -1,11 +1,16 @@
 ---
 title: Alpine Linux
 date: 2018-08-25 12:26:07
-tags: Alpine, Linux, Containers
+tags: 
+  - Alpine 
+  - Linux 
+  - Containers
 category: Alpine
 ---
 
-# Alpine linux
+Some general commands and info about the ever useful Alpine linux. 
+
+<!--more-->
 
 ### Setup fresh install
 ```bash
