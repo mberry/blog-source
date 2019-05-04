@@ -8,7 +8,7 @@ tags:
 category: Alpine
 ---
 
-Some general commands and info about the ever useful Alpine linux. 
+Some general commands and info about the ever useful Alpine linux.  Based on musl and BusyBox. It uses a hardened kernel and compiles all user space binaries as position-independent executables with stack-smashing protection.
 
 <!--more-->
 
