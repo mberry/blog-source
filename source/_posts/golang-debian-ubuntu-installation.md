@@ -1,7 +1,11 @@
 ---
 title: Golang Debian/Ubuntu Installation
 date: 2017-09-15 10:18:21
-tags: Go, Debian, Ubuntu
+tags: 
+    - Go 
+    - Debian
+    - Ubuntu
+category: Guides
 ---
 
 Bash script to install a specific Go version, set environmental variables and clean up.

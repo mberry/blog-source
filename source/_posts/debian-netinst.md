@@ -1,6 +1,8 @@
 ---
 title: Debian Netinst
-tags: 'Debian, Linux'
+tags: 
+    - Debian
+    - Linux
 category: Debian
 date: 2018-07-12 09:08:35
 ---

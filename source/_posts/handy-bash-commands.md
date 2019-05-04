@@ -1,7 +1,11 @@
 ---
 title: Handy Bash Commands
 date: 2018-06-02 14:08:40
-tags: shell, linux, sysadmin
+tags: 
+    - shell
+    - linux
+    - sysadmin
+category: Linux
 ---
 
 A random collection of (possibly) useful shell commands.

@@ -1,12 +1,14 @@
 ---
 title: Docker download without signup
-tags: 'Docker, "Corporate Nonsense"'
+tags: 
+    - Docker
+    - Corporate Nonsense
 category: Docker
 date: 2018-07-14 12:20:43
 ---
 
 
-![How to annoy everyone in 3 simple words](../images/login-to-dl.png)
+![How to annoy everyone in 3 simple words](/images/login-to-dl.png)
 
 In yet another brilliant move by a kpi fuelled  management departments the Apache licensed Docker now requires a sign up to download. Bathe in the *user experience*.
 

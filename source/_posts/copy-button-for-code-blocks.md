@@ -1,7 +1,9 @@
 ---
 title: Copy button for code blocks
 date: 2018-04-20 11:23:45
-tags: webdev
+tags: 
+ - webdev
+category: Programming
 ---
 
 There's a few frameworks out there like clipboard.js and code-box-copy but after some messing around a simpler solution seems to be a little bit of jQuery.

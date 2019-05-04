@@ -1,7 +1,9 @@
 ---
 title: LXC
 date: 2018-10-14 08:37:03
-tags: LXC, Containers
+tags: 
+    - LXC
+    - Containers
 category: Containers
 ---
 

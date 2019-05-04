@@ -1,7 +1,10 @@
 ---
 title: Nifty Debian Programs
 date: 2018-04-02 12:02:27
-tags: Debian, Software
+tags: 
+    - Debian
+    - Software
+category: Linux
 ---
 
 #### Contents

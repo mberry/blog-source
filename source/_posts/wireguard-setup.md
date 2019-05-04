@@ -1,11 +1,16 @@
 ---
 title: Wireguard Setup
 date: 2018-12-15 11:33:02
-tags: wireguard, vpn
-category: Debian
+tags: 
+    - wireguard
+    - vpn
+    - debian
+category: Guides
 ---
 
-### Debian Wireguard Setup
+Guide is for Debian stretch.
+
+<!--more-->
 
 ##### Ensure correct kernel headers (Optional)
 

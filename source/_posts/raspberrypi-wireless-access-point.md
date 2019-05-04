@@ -1,7 +1,9 @@
 ---
 title: RaspberryPi Wireless Access Point
 date: 2019-01-31 11:07:00
-tags: Raspberry Pi, Networking
+tags: 
+    - Raspberry Pi
+    - Networking
 category: Networking
 ---
 

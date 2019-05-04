@@ -1,7 +1,10 @@
 ---
 title: Deep Speech Install
 date: 2018-09-22 10:18:59
-tags: Deep Speech, Tensorflow, Machine Learning
+tags: 
+    - Deep Speech
+    - Tensorflow
+    - Machine Learning
 category: Machine Learning
 ---
 

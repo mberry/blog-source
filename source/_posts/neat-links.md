@@ -1,7 +1,9 @@
 ---
 title: Neat Links
 date: 2018-10-14 08:53:02
-tags: Misc, Links
+tags: 
+    - Misc
+    - Links
 category: Misc
 ---
 

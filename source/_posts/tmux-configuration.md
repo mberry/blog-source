@@ -1,7 +1,10 @@
 ---
 title: Tmux configuration
 date: 2018-11-08 09:50:59
-tags: Linux, Config, Tmux
+tags: 
+    - Linux
+    - Config
+    - Tmux
 category: Misc
 ---
 

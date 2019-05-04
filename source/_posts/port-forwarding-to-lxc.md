@@ -1,10 +1,12 @@
 ---
 title: Port Forwarding to LXC
 date: 2019-01-12 14:10:37
-tags: LXC, Containers, Netowrking
+tags: 
+   - LXC
+   - Containers
+   - Netowrking
 category: Networking
 ---
-
 
 ### Port Forwarding to LXC Container
 

@@ -1,10 +1,13 @@
 ---
 title: Creating a static site with Hexo
 date: 2018-06-15 15:51:53
-tags: hexo, webdev
+tags: 
+- hexo
+- webdev
+category: Programming
 ---
 
-Hexo is a static site generator built with javascript.
+Hexo is a versatile static site generator built with javascript.
 
 <!--more-->
 

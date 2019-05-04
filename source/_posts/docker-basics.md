@@ -1,11 +1,13 @@
 ---
 title: Docker Basics
 date: 2018-05-12 19:14:30
-tags: docker, containers
+tags: 
+  - docker
+  - containers
 category: Containers
 ---
 
-**A rough outline of Docker basics** 
+A rough outline of using Docker.
 
 <!--more-->
 

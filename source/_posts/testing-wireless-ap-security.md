@@ -1,7 +1,10 @@
 ---
 title: Testing Wireless AP Security
 date: 2019-01-22 08:56:08
-tags: Wifi, Networking, Security
+tags: 
+    - Wifi
+    - Networking
+    - Security
 category: Networking
 ---
 

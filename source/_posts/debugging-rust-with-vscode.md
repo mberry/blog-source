@@ -1,8 +1,11 @@
 ---
 title: Debugging Rust with VSCode
 date: 2018-12-20 08:37:49
-tags: Rust, Debugging, VSCode
-category: Rust
+tags: 
+    - Rust
+    - Debugging
+    - VSCode
+category: Programming
 ---
 
 VSCode should detect rust and offer to create a launch.json template. From there it just needs a few tweaks. 

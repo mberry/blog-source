@@ -1,11 +1,11 @@
 ---
 title: Fuzzing with rust
-tags: 'Fuzzing, Factom'
-category: Fuzzing
+tags: 
+    - Fuzzing
+    - Factom
+category: Programming
 date: 2018-10-14 09:41:38
 ---
-
-
 
 
 ### Fuzzing Factom

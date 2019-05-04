@@ -1,7 +1,9 @@
 ---
 title: Radius Server Setup
 date: 2019-01-31 09:02:22
-tags: Radius, Networking
+tags: 
+    - Radius
+    - Networking
 Category: Networking
 ---
 

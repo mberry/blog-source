@@ -1,7 +1,11 @@
 ---
 title: Porting C codebases to Rust
 date: 2018-06-10 09:22:46
-tags: C, Rust, Development
+tags: 
+    - C
+    - Rust
+    - Development
+category: Programming
 ---
 
 Transpiling can sometimes yield good results and at least provides a scaffold to build upon. C2Rust was built upon Corrode and is currently the best around.
