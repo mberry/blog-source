@@ -7,7 +7,11 @@ tags:
 category: Guides
 ---
 
-Basic Server Hardening
+Full guide starting from scratch on a fresh OS to join the Factom Testnet Authority Set
+
+<!--more-->
+
+### Basic Server Hardening
 
 ```bash
 #!/usr/bin/bash
