@@ -4,7 +4,7 @@ date: 2019-01-31 09:02:22
 tags: 
     - Radius
     - Networking
-Category: Networking
+category: Networking
 ---
 
 Radius is the usual backend for WPA2-EAP, a guide to setting it up on a Debian server.

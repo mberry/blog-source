@@ -5,7 +5,7 @@ tags:
   - Alpine 
   - Linux 
   - Containers
-category: Alpine
+category: Containers
 ---
 
 The ever useful Alpine linux.  Based on musl and BusyBox. It uses a hardened kernel and compiles all user space binaries as position-independent executables with stack-smashing protection. A quick rundown.

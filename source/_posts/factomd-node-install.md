@@ -4,7 +4,7 @@ date: 2017-06-05 07:52:40
 tags: 
     - Factom
     - Debian
-Category: Guides
+category: Guides
 ---
 
 Factomd installation script for Debian, requires Go, git and Glide.
