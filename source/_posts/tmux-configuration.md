@@ -8,7 +8,7 @@ tags:
 category: Misc
 ---
 
-Tmux is a wonderful tool for administering remote servers and sometimes even personal computers. But it's default config out of the box leaves a lot to be desired.
+Tmux is a wonderful tool for administering remote servers and sometimes even personal computers. But its default config out of the box leaves a lot to be desired.
 
 <!--more-->
 
