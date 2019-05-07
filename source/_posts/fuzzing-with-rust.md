@@ -7,6 +7,9 @@ category: Programming
 date: 2018-10-14 09:41:38
 ---
 
+A guide to fuzzing the rust api client for Factom.
+
+<!--more-->
 
 ### Fuzzing Factom
 

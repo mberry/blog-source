@@ -14,6 +14,7 @@ A new flaw in WPA2-Personal has been found which doesn't require capturing the 4
 
 WPA2-EAP is not affected.  
 
+<!--more-->
 
 ```bash
 ## Capture the packet

@@ -7,11 +7,11 @@ tags:
 Category: Guides
 ---
 
-Factomd installation script, requires Go, git and Glide.
-
-Golang installation instructions [here](golang-debian-ubuntu-installation\index.html)
+Factomd installation script for Debian, requires Go, git and Glide.
 
 <!--more-->
+
+Golang installation instructions [here](golang-debian-ubuntu-installation\index.html)
 
 Run with root privileges:
 

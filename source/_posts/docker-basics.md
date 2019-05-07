@@ -7,7 +7,7 @@ tags:
 category: Containers
 ---
 
-A rough outline of using Docker.
+A rough outline of some useful Docker setups.
 
 <!--more-->
 

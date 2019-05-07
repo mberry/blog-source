@@ -8,6 +8,10 @@ tags:
 category: Machine Learning
 ---
 
+DeepSpeech is text-to-speech engine made by Mozilla based on [Baidu's research](https://arxiv.org/abs/1412.5567). It uses Tensorflow. This is a guide to installing it on Debian.
+
+<!--more-->
+
 ### Deep Speech install
 
 Ubuntu Server 18.10

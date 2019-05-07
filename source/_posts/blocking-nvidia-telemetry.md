@@ -9,7 +9,7 @@ category: Privacy
 date: 2019-05-03 09:26:25
 ---
 
-Null-routing all the garbage packets you shouldn't be sending out. Their GEForce config GUI also requires a sign-up, sigh.
+Null-routing all the garbage packets you shouldn't be sending out. Their GEForce GUI for configuration also requires a sign-up, sigh.
 
 <!--more-->
 

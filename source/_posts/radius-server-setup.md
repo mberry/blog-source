@@ -7,6 +7,10 @@ tags:
 Category: Networking
 ---
 
+Radius is the usual backend for WPA2-EAP, a guide to setting it up on a Debian server.
+
+<!--more-->
+
 ```bash
 apt update && apt -y upgrade;
 apt install -y postgresql postgresql-client git iptables

@@ -4,9 +4,13 @@ date: 2019-01-12 14:10:37
 tags: 
    - LXC
    - Containers
-   - Netowrking
+   - Networking
 category: Networking
 ---
+
+Networking with Linux containers.
+
+<!--more-->
 
 ### Port Forwarding to LXC Container
 

@@ -8,7 +8,7 @@ tags:
 category: Guides
 ---
 
-Guide is for Debian stretch.
+Wireguard is a simple, fast and modern VPN that is being integrated into the Linux kernel. Guide is for setting up on Debian Stretch.
 
 <!--more-->
 

@@ -7,7 +7,7 @@ tags:
 category: Programming
 ---
 
-Hexo is a versatile static site generator built with javascript.
+Hexo is a versatile static site generator built with javascript. The basics of setting one up and some common config settings.
 
 <!--more-->
 

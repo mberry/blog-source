@@ -7,6 +7,10 @@ tags:
 category: Containers
 ---
 
+LXC is the ever-ignored alternative in a docker dominated world. An outline of usage.
+
+<!--more-->
+
 # LXC
 
 ### Installation

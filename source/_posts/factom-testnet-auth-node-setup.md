@@ -7,7 +7,7 @@ tags:
 category: Guides
 ---
 
-Full guide starting from scratch on a fresh OS to join the Factom Testnet Authority Set
+Full guide starting from scratch on a fresh OS to join the Factom Testnet Authority Set.
 
 <!--more-->
 

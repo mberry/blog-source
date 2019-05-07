@@ -8,9 +8,9 @@ category: Programming
 
 There's a few frameworks out there like clipboard.js and code-box-copy but after some messing around a simpler solution seems to be a little bit of jQuery.
 
-<!--more-->
-
 To use a clipboard image or for different text modify the clippy element. Note that jQuery doesn't *officially* support SVG images but had no problem embedding one here. The copied text box reverts after 5 seconds using a promise to sleep.
+
+<!--more-->
 
 As an after-footer script (or anywhere after loading jQuery):
 

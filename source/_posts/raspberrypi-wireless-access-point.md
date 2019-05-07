@@ -7,6 +7,10 @@ tags:
 category: Networking
 ---
 
+Delving into the wifi adapter of a Raspberry Pi 3 and it's usage as an access point.
+
+<!--more-->
+
 ### Locate rpi on home network
 ```bash
 sudo nmap -sn 192.168.0.0/16 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'
