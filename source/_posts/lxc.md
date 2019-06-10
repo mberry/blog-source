@@ -63,7 +63,7 @@ lxc exec my-container /bin/bash
 ### Networking
 Disabled by default, in many applications you'll probably want some networking.
 
-Missing configuration is sourced from */usr/lib/x86_64-linux-gnu/lxc/lxc-net* which contains the default values which means your bridge will be given a subnet of ```10.0.3.0```. You can change these values if you want in the */etc/default/lxc-net* file. See defaults below.
+Missing configuration is sourced from */usr/lib/x86_64-linux-gnu/lxc/lxc-net* which contains the default values which means your bridge will be given a subnet of `10.0.3.0`. You can change these values if you want in the */etc/default/lxc-net* file. See defaults below.
 
 ```bash
 echo USE_LXC_BRIDGE="true" > /etc/default/lxc-net;
@@ -76,7 +76,7 @@ lxc.network.hwaddr = 00:16:3e:xx:xx:xx" > /etc/lxc/default.conf;
 service lxc-net restart
 ```
 
-Newly created containers now have the above configuration. This means they will be using the ```lxcbr0``` bridge created by the lxc-net service
+Newly created containers now have the above configuration. This means they will be using the `lxcbr0` bridge created by the lxc-net service
  
 ```
 ip link show
@@ -87,7 +87,7 @@ ip link show
 
 ##### Default values for lxc-net
 
-```
+```bash
 USE_LXC_BRIDGE="true"
 LXC_BRIDGE="lxcbr0"
 LXC_ADDR="10.0.3.1"
