@@ -7,7 +7,7 @@ tags:
 category: Guides
 ---
 
-Full guide starting from scratch on a fresh OS to join the Factom Testnet Authority Set.
+Full guide starting from scratch on a fresh OS to join the Factom Testnet Authority Set. This has been condensed down into a set of bash scripts.   
 
 <!--more-->
 
@@ -32,7 +32,7 @@ echo 'janitor ALL=(ALL) ALL' >> /etc/sudoers
 mkdir /home/janitor/.ssh
 chmod 700 /home/janitor/.ssh
 read -p "Please enter ssh key (no newlines!): " ssh_key
-echo  $ssh_key > /home/janitor/.ssh/authorized_keys
+echo  $ssh_key >> /home/janitor/.ssh/authorized_keys
 chmod 600 /home/janitor/.ssh/authorized_keys
 chown janitor:janitor -R /home/janitor/.ssh/
 
@@ -41,7 +41,7 @@ sed -i 's/#Port 22/Port 22202/' /etc/ssh/sshd_config
 sed -i '/PubkeyAuthentication/c\PubkeyAuthentication yes' /etc/ssh/sshd_config
 sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/' /etc/ssh/sshd_config
 sed -i '/AuthorizedKeysFile/c\AuthorizedKeysFile %h/.ssh/authorized_keys' /etc/ssh/sshd_config
-sed -i 's/#PermitRootLogin prohibit-password' /etc/ssh/sshd_config
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config
 
 service ssh restart
 ```
@@ -112,9 +112,11 @@ printf '{
 
 
 ```bash
+sudo mkdir /etc/systemd/system/docker.service.d &&
 printf "[Service]
 ExecStart=
-ExecStart=/usr/bin/dockerd" | sudo tee /etc/systemd/system/docker.service.d/override.conf
+ExecStart=/usr/bin/dockerd
+" | sudo tee /etc/systemd/system/docker.service.d/override.conf
 ```
 
 ```bash
@@ -130,9 +132,16 @@ sudo systemctl status docker
 ### Factomd
 ##### Setup volumes
 ```bash
-docker volume create factom_database;
-docker volume create factom_keys;
+sudo docker volume create factom_database;
+sudo docker volume create factom_keys;
 ```
+
+##### Docker Swarm
+```bash
+sudo docker swarm join --token SWMTKN-1-0bv5pj6ne5sabqnt094shexfj6qdxjpuzs0dpigckrsqmjh0ro-87wmh7jsut6ngmn819ebsqk3m 54.171.68.124:2377
+```
+
+Fill out form [here](https://docs.google.com/forms/d/e/1FAIpQLSd-t33chnGOyLZ6kJ-QC-L0EgOExzY7GQ8y9e0I0E4AIbdKBQ/viewform)
 
 ##### Get container (can also be used for updating)
 ```bash
