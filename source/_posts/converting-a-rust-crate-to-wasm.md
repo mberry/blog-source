@@ -1,8 +1,10 @@
 ---
 title: Converting a Rust Crate to Wasm
-tags: Rust, Wasm
+tags: 'Rust, Wasm'
 category: Guides
+date: 2019-06-13 20:55:49
 ---
+
 
 Starting from scratch and delving into targeting a wasm build from a *simple* rust crate with only two dependencies: `sha2` and `rand`. Seems simple? Perhaps. Warts and all with the failures so I remember for next time.  
 
