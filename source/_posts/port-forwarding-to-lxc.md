@@ -52,8 +52,9 @@ MAC Address: 00:16:3E:F8:C4:92 (Xensource)
 
 Radius is responding on port 1812
 
-Inject rule at top of iptables and forward udp from host:
+Requires some prerouting and then and forward udp packets on that port from the host:
 
 ```bash
+iptables -t nat -A PREROUTING -p udp --dport 1812 -j DNAT --to-destination 10.0.3.144
 iptables -I FORWARD -p udp -d 10.0.3.144 --dport 1812 -j ACCEPT
 ```
