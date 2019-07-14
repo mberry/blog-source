@@ -1,6 +1,6 @@
 ---
 title: NTRUPRime Wasm Demo
-tags:
+tags: wasm
 ---
 A basic demo of a rust crate that has been converted into a wasm module.
 
