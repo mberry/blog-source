@@ -4,6 +4,11 @@ tags:
 ---
 A basic demo of a rust crate that has been converted into a wasm module.
 
+Due to the mime type errors I can only get this working on a local dev server. Guess it's a github pages issue. Leaving it up for now, the source code is [here](https://github.com/MitchellBerry/blog-source/tree/master/source/scripts)
+
+```text
+streamlined_ntru_prime_bg.wasm:1 Failed to load module script: The server responded with a non-JavaScript MIME type of "application/wasm". Strict MIME type checking is enforced for module scripts per HTML spec.
+```
 
 <!--more-->
 
