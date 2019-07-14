@@ -1,7 +1,9 @@
 ---
 title: NTRUPRime Wasm Demo
 tags: wasm
+date: 2019-07-14 20:07:17
 ---
+
 A basic demo of a rust crate that has been converted into a wasm module.
 
 Due to the mime type errors I can only get this working on a local dev server. Guess it's a github pages issue. Leaving it up for now, the source code is [here](https://github.com/MitchellBerry/blog-source/tree/master/source/scripts)
