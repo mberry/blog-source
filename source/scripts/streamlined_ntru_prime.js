@@ -1,4 +1,4 @@
-import * as wasm from './streamlined_ntru_prime_bg.wasm';
+import * as wasm from './streamlined_ntru_prime_bg';
 
 let cachegetUint8Memory = null;
 function getUint8Memory() {
