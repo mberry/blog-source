@@ -1,4 +1,4 @@
-import * as wasm from "/streamlined_ntru_prime";
+import * as wasm from "./streamlined_ntru_prime.js";
 
 const generateKeyButton = document.getElementById("generatekey");
 const encapButton = document.getElementById("encapsulate");

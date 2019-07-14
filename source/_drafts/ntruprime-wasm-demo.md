@@ -2,6 +2,12 @@
 title: NTRUPRime Wasm Demo
 tags:
 ---
+A basic demo of a rust crate that has been converted into a wasm module.
+
+
+<!--more-->
+
+<script src="/scripts/bootstrap.js"></script>
 {% raw %}
     <p><button id="generatekey">Generate Keys</button> 
         <button id="movebelow">Move Below</button>
@@ -26,6 +32,6 @@ tags:
         Cipher Text (Input): <input style="width: 300px;" type="text" id="ciphertext2" >
         <br><br>
         Shared Key (Output): <input style="width: 300px;" type="text" id="sharedkey2"></p>
-    <script src="/scripts/index.js"></script>
+    
 
 {% endraw %}
